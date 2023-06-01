@@ -7,7 +7,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 class TransportadorasResource extends JsonResource
 {
     /**
-     * Transform the resource into an array.
+     * Transforma a transportadora em um array para representação JSON.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
@@ -20,7 +20,8 @@ class TransportadorasResource extends JsonResource
             'endereco' => $this->endereco,
             'email' => $this->email,
             'telefone' => $this->telefone,
-            // Outros campos desejados
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }

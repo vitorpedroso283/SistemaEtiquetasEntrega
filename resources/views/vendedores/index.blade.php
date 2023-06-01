@@ -4,14 +4,16 @@
 <div class="container">
     <h1>Lista de Vendedores</h1>
 
-    <a href="{{ route('vendedores.create') }}" class="btn btn-primary mb-3">Criar Vendedor</a>
+    <div class="text-right mb-3">
+        <a href="{{ route('vendedores.create') }}" class="btn btn-primary">Criar Vendedor</a>
+    </div>
 
     <table class="table table-bordered table-striped">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>Endereço</th>
+                <th style="width:15px">Endereço</th>
                 <th>Email</th>
                 <th>Telefone</th>
                 <th>Ações</th>

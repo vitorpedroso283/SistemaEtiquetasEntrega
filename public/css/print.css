@@ -1,0 +1,18 @@
+body {
+    color: black;
+    background: white;
+}
+
+body * {
+    visibility: hidden;
+}
+
+#etiqueta, #etiqueta * {
+    visibility: visible;
+}
+
+#etiqueta {
+    position: absolute;
+    left: 0;
+    top: 0;
+}

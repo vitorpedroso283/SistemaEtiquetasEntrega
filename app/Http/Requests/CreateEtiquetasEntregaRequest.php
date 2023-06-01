@@ -1,17 +1,26 @@
 <?php
 
-
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
 class CreateEtiquetasEntregaRequest extends FormRequest
 {
+    /**
+     * Determina se o usuário está autorizado a fazer a solicitação.
+     *
+     * @return bool
+     */
     public function authorize(): bool
     {
         return true;
     }
 
+    /**
+     * Define as regras de validação para a solicitação.
+     *
+     * @return array
+     */
     public function rules()
     {
         return [
@@ -21,4 +30,3 @@ class CreateEtiquetasEntregaRequest extends FormRequest
         ];
     }
 }
-

@@ -6,11 +6,21 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class CreateTransportadorasRequest extends FormRequest
 {
-    public function authorize(): bool
+    /**
+     * Determine se o usuário tem autorização para fazer esta requisição.
+     *
+     * @return bool
+     */
+    public function authorize()
     {
         return true;
     }
 
+    /**
+     * Obtenha as regras de validação que se aplicam à requisição.
+     *
+     * @return array
+     */
     public function rules()
     {
         return [

@@ -7,7 +7,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 class VendedoresResource extends JsonResource
 {
     /**
-     * Transform the resource into an array.
+     * Transforma a representação do recurso em um array.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
@@ -20,7 +20,8 @@ class VendedoresResource extends JsonResource
             'endereco' => $this->endereco,
             'email' => $this->email,
             'telefone' => $this->telefone,
-            // Outros campos desejados
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }

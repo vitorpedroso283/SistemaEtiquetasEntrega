@@ -7,7 +7,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 class EtiquetasEntregaResource extends JsonResource
 {
     /**
-     * Transform the resource into an array.
+     * Transforma a instância em um array para ser retornada como resposta.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
@@ -16,11 +16,13 @@ class EtiquetasEntregaResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'vendedor' => new VendedoresResource($this->vendedor),
-            'transportadora' => new TransportadorasResource($this->transportadora),
             'pedido_id' => $this->pedido_id,
-            'data_envio' => $this->data_envio,
-            // Outros campos desejados
+            'transportadora_id' => $this->transportadora_id,
+            'numero_etiqueta' => $this->numero_etiqueta,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
+            'pedido' => new PedidosResource($this->whenLoaded('pedido')),
+            'transportadora' => new TransportadorasResource($this->whenLoaded('transportadora')),
         ];
     }
 }

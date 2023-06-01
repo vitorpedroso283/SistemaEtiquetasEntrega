@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container overflow-auto">
+<div class="container">
     <h1>Lista de Transportadoras</h1>
     <div class="text-right mb-3">
         <a href="{{ route('transportadoras.create') }}" class="btn btn-primary">Criar Transportadora</a>
@@ -12,7 +12,7 @@
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>Endereço</th>
+                <th style="width:15px">Endereço</th>
                 <th>Email</th>
                 <th>Telefone</th>
                 <th>Ações</th>
