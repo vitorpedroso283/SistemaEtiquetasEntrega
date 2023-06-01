@@ -1,66 +1,63 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistema de Gerenciamento de Pedidos
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+O Sistema de Gerenciamento de Pedidos é uma aplicação web desenvolvida para auxiliar empresas no controle e organização de pedidos, vendedores, transportadoras e etiquetas de entrega. Com este sistema, é possível cadastrar, visualizar, editar e excluir registros relacionados a essas entidades, proporcionando uma visão centralizada e simplificada do processo de gerenciamento de pedidos.
 
-## About Laravel
+## Tecnologias Utilizadas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- PHP 8.2: Linguagem de programação utilizada no desenvolvimento da aplicação.
+- Laravel 10: Framework de desenvolvimento web em PHP que fornece uma estrutura robusta e elegante para construir aplicativos web.
+- MySQL 8.33: Sistema de gerenciamento de banco de dados relacional usado para armazenar e gerenciar os dados da aplicação.
+- Node.js: Plataforma de desenvolvimento JavaScript utilizada para compilar os assets do projeto.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Funcionalidades Principais
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Cadastro de pedidos, vendedores, transportadoras e etiquetas de entrega.
+- Visualização detalhada de informações de pedidos, vendedores, transportadoras e etiquetas de entrega.
+- Associação de vendedores e transportadoras aos pedidos.
+- Geração de etiquetas de entrega para cada pedido.
+- Autenticação de usuários com recursos de login e logout.
 
-## Learning Laravel
+## Pré-requisitos
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Certifique-se de ter as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- PHP 8.2 ou versão superior
+- MySQL 8.33 ou versão superior
+- Node.js
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Instalação e Configuração
+OBS: EXISTE A DOCUMENTAÇÃO COMPLETA DENTRO DA RAIZ DO REPOSITÓRIO
 
-## Laravel Sponsors
+1. Clone o repositório para o seu ambiente local.
+2. Instale as dependências do PHP executando o comando `composer install` no terminal.
+3. Configure as informações do banco de dados no arquivo `.env`.
+4. Execute as migrações do banco de dados executando o comando `php artisan migrate` no terminal.
+5. Execute as factories para popular as tabelas com dados de exemplo usando o comando `php artisan db:seed` no terminal.
+6. Compile os assets executando o comando `npm run dev` no terminal.
+7. Inicie o servidor executando o comando `php artisan serve` no terminal.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+A aplicação estará disponível em `http://localhost:8000`.
 
-### Premium Partners
+## Uso do Sistema
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+1. Acesse a aplicação pelo navegador utilizando o endereço `http://localhost:8000`.
+2. Faça login utilizando suas credenciais.
+3. Navegue pelo sistema para criar, visualizar, editar e excluir pedidos, vendedores, transportadoras e etiquetas de entrega.
+4. Utilize os formulários para adicionar ou editar informações e clique em "Salvar" para confirmar as alterações.
+5. Para sair do sistema, clique em "Logout" no canto superior direito da página.
 
-## Contributing
+## Suporte
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Se você encontrar algum problema ou tiver alguma dúvida em relação ao uso do sistema, entre em contato com a equipe de suporte técnico através do e-mail support@empresa.com ou pelo telefone (XX) XXXX-XXXX.
 
-## Code of Conduct
+## Contribuições
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias, correções de bugs ou novas funcionalidades.
 
-## Security Vulnerabilities
+## Considerações Finais
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+O Sistema de Gerenciamento de Pedidos foi desenvolvido para simplificar e agilizar o processo de gerenciamento de pedidos em sua empresa. Esperamos que esta aplicação seja útil para você e atenda às suas necessidades.
 
-## License
+Agradecemos por escolher nosso sistema e estamos à disposição para qualquer suporte adicional.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Equipe de Desenvolvimento Empresa XYZ
